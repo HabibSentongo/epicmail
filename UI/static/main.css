@@ -120,28 +120,24 @@ footer{
     height: 15%; 
 }
 .email{
-    background: #78f7f7;
+    background: #afbebe;
     border-radius: 10px;
     padding: 4px;
     margin: 4px;
     
 }
-.email a{
-    float: right;
-    display: inline;
-    padding:10px;
-    background-color: #f70404;
-    text-decoration: none;
-    margin: 2px;
-    bottom: 0px;
-    
-}
+
 #options{
     display: inline;
 }
-.email a:hover{
-    background-color:orange;
+.email:hover{
+    background-color:rgb(206, 224, 228);
 }
+
+#msg{
+    display: none;
+}
+
 form button{
     width: 30%;
     border-radius: 15px;
