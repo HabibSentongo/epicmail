@@ -18,20 +18,22 @@
                         </a>
                         <h1>EpicMail</h1> 
                 </div>
-                <nav>
-                    <ul>
-                        <li ><a href="inbox.html">Inbox</a></li>
-                        <li ><a href="new.html">Compose</a></li>
-                        <li ><a href="sent.html">Sent</a></li>
-                        <li ><a href="drafts.html">Drafts</a></li>
-                        <li ><a href="index.html">Sign Out</a></li>
-                    </ul>
-                </nav>
+                
             </div>
         </header>
 
     <section id="page" >
         <h3 id="heading">INBOX</h3>
+        <nav id="sidenav">
+            <ul>
+                <li ><a href="inbox.html">Inbox</a></li>
+                <li ><a href="new.html">Compose</a></li>
+                <li ><a href="sent.html">Sent</a></li>
+                <li ><a href="drafts.html">Drafts</a></li>
+                <li ><a href="index.html">Sign Out</a></li>
+            </ul>
+        </nav>
+    <div id="mailist">
         <div class="email" onclick="mailDetails()">
             <p class="topic">Welcome to EpicMail <span id="dots">.....</span></p>
             <p id="msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br></p>
@@ -47,6 +49,7 @@
             <p id="msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br></p>
             <a href="new.html"><button class="inBtn">Reply</button></a><a href="new.html"><button class="inBtn">Foward</button></a>
         </div>
+    </div>
     </section>
     <footer>
         <div class="footer-info">
