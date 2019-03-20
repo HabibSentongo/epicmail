@@ -24,12 +24,14 @@ ul{
 }
 .button1{
     height: 38px;
-    background: #2ef705b7;
+    background: #f383ef;
     border: 5px;
     padding-left: 10px;
     padding-right: 10px;
     color: white;
-    font-weight: bold
+    font-weight: bold;
+    font-size: 150%;
+    width: 30%;
 
 }
 .button1 a{
@@ -46,7 +48,7 @@ header a{
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
-    font-size: 18px
+    font-size: 18px;
 }
 
 header .current-page a{
@@ -98,34 +100,82 @@ header  .current-page a:hover{
     height: 30px;
     width: 200px; 
     padding: 10px;
-    margin:5px 25px 5px 5px;
+    margin:0px 25px 5px 5px;
 }
 
 .inputs{
     float: right;
     width: 40%;
+    padding-top: 0%;
+}
+
+input, textarea{
+    width: 80%;
+    border-radius: 6px;
+    padding: 1%;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
 }
 
 .mailinputs{
     width: 70%;
     align-content: center;
-    padding-left: 30%;
+    padding-left: 20%;
 }
 
 .info{
     float: left;
     width: 40%;
+    padding-top: 3%;
 }
 
 input{
     margin: 5px;
     height: 20px;
 }
+
+#sidenav{
+    border-radius: 5%;
+    float: left;
+    width: 10%;
+    background: rgb(206, 224, 228);
+    padding-left: 5%;
+    height: 100%;
+    bottom: 0%;
+}
+
+#sidenav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+#sidenav a{
+    color: blue;
+    text-decoration: none;
+    top: 10%;
+    bottom: 10%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#sidenav ul :hover{
+    color: aquamarine;
+}
+
+#mailist{
+    float: right;
+    width: 80%;
+    padding-right: 3%;
+}
 footer{
     position: fixed;
     bottom: 0%;
     width: 100%;
-    background: #83caf3;
+    background: rgb(206, 224, 228);
    text-align: center;
     height: 15%; 
 }
@@ -150,13 +200,13 @@ footer{
 
 form button{
     width: 30%;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .inBtn{
     width: 7%;
     height: 5%;
-    border-radius: 10px;
+    border-radius: 50px;
     margin-left: 1%;
 }
 
