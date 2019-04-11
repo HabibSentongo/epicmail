@@ -5,6 +5,8 @@ body{
     padding: 0.5px;
     margin: 0px;
     background-color: #eff5fb;
+    scroll-behavior: auto;
+    padding-bottom: 5%;
 }
 ul{
     margin: 0;
@@ -30,7 +32,7 @@ ul{
     padding-right: 10px;
     color: white;
     font-weight: bold;
-    font-size: 150%;
+    font-size: 100%;
     width: 30%;
 
 }
@@ -61,7 +63,6 @@ header .current-page a{
 
 
 header li{
-    float: left;
     display: inline;
     padding: 0 20px 0 10px;
 
@@ -139,11 +140,12 @@ input{
 #sidenav{
     border-radius: 5%;
     float: left;
-    width: 10%;
+    width: 12%;
     background: rgb(206, 224, 228);
-    padding-left: 5%;
+    text-align: center;
     height: 100%;
     bottom: 0%;
+    min-width: 150px;
 }
 
 #sidenav ul{
@@ -163,12 +165,12 @@ input{
 }
 
 #sidenav ul :hover{
-    color: aquamarine;
+    color: rgba(8, 8, 8, 0.055);
 }
 
 #mailist{
     float: right;
-    width: 80%;
+    width: 82%;
     padding-right: 3%;
 }
 footer{
@@ -177,7 +179,7 @@ footer{
     width: 100%;
     background: rgb(206, 224, 228);
    text-align: center;
-    height: 15%; 
+    height: 7%; 
 }
 .email{
     background: #afbebe;
@@ -194,24 +196,28 @@ footer{
     background-color:rgb(206, 224, 228);
 }
 
-#msg{
-    display: none;
-}
-
 form button{
     width: 30%;
     border-radius: 10px;
 }
 
 .inBtn{
-    width: 7%;
+    width: 65px;
     height: 5%;
     border-radius: 50px;
     margin-left: 1%;
+    font-weight: bold;
 }
 
 .topic{
     font-weight: bold;
+}
+
+@media screen and (max-width: 1009px){
+    #mailist{
+        width: 78%;
+    }
+
 }
 
 @media screen and (max-width: 959px){
@@ -225,17 +231,49 @@ form button{
     header{
         padding-bottom: 10px;  
     }
+    #para1{
+        display: none;
+    }
     .footer-info{
         display: inline;
         margin: 0px;
     }
+    #mailist{
+        width: 75%;
+    }
 
-    @media screen and (max-width: 640px){
+    @media screen and (max-width: 875px){
+        .info{
+            display: none;
+        }
+        .inputs{
+            float: center;
+            width: 90%;
+            padding-top: 0%;
+        }
+        #mailist{
+            width: 70%;
+        }
+        #sidenav{
+            margin-left: 2%;
+        }
+        
 
     }
-    @media screen and (max-width: 320px){
-        #footext{
+    @media screen and (max-width: 600px){
+        footer{
             display: none;
+        }
+        body{
+            min-width: 451px;
+        }
+        #mailist{
+            width: 95%;
+            margin-top: 3px;
+        }
+        #sidenav{
+            margin-left: 30%;
+            display: inline;
         }
     }
 
